@@ -84,6 +84,7 @@ namespace Chocolatey
             this.txtMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtMsg.Size = new System.Drawing.Size(903, 319);
             this.txtMsg.TabIndex = 1;
+            this.txtMsg.TextChanged += new System.EventHandler(this.txtMsg_TextChanged);
             // 
             // btnInstChrome
             // 
@@ -355,6 +356,7 @@ namespace Chocolatey
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Install packages";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

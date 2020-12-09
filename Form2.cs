@@ -100,10 +100,12 @@ namespace Chocolatey
             try
             {
                 Chocolatey.PowerShellCmd.PowerShellCommand("choco install foxitreader", ref txtMsg);
+                System.Windows.Forms.Application.Exit();
             }
             catch (Exception ex)
             {
                 txtMsg.Text = ex.ToString();
+                System.Windows.Forms.Application.Exit();
             }
         }
 
@@ -216,6 +218,16 @@ namespace Chocolatey
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMsg_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
