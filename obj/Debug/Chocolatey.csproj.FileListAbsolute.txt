@@ -1,0 +1,15 @@
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\Chocolatey.exe.config
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\Chocolatey.exe
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\Chocolatey.pdb
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\System.Management.Automation.dll
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\Microsoft.Management.Infrastructure.dll
+D:\SvetProjects\Chocolatey\Chocolatey\bin\Debug\System.Management.Automation.xml
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.csprojAssemblyReference.cache
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.Properties.Resources.resources
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.csproj.GenerateResource.cache
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.csproj.CoreCompileInputs.cache
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.csproj.CopyComplete
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.exe
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.pdb
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.Form1.resources
+D:\SvetProjects\Chocolatey\Chocolatey\obj\Debug\Chocolatey.Form2.resources
