@@ -52,6 +52,8 @@ namespace Chocolatey
             this.btnInstSkype = new System.Windows.Forms.Button();
             this.btnInstVeeam = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -334,12 +336,32 @@ namespace Chocolatey
             this.label1.TabIndex = 18;
             this.label1.Text = "Nasko, Gena, Svet";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(932, 350);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(224, 24);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.Text = "choco uninstall SOFTWARE -y";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(932, 380);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(224, 39);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.Text = "choco uninstall SOFTWARE -y --remove-dependencies";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1168, 578);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInstVeeam);
             this.Controls.Add(this.btnInst0patch);
@@ -386,5 +408,7 @@ namespace Chocolatey
         private System.Windows.Forms.Button btnInstVeeam;
         private System.Windows.Forms.Button btnInstEdge;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

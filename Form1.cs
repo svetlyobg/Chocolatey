@@ -185,5 +185,19 @@ namespace Chocolatey
             Form f2 = new Form2();
             f2.Show();
         }
+
+        private void btninstFoxitRdr_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install foxitreader", ref txtMsg);
+               // System.Windows.Forms.Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                txtMsg.Text = ex.ToString();
+               // System.Windows.Forms.Application.Exit();
+            }
+        }
     }
 }
