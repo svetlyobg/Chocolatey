@@ -43,6 +43,7 @@ namespace Chocolatey
             this.btnForm2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -222,12 +223,22 @@ namespace Chocolatey
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Install Chocolatey";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1246, 684);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Nasko, Gena, Svet";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1356, 706);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnForm2);
             this.Controls.Add(this.btnListOutdated);
             this.Controls.Add(this.btnUpgradeOutdated);
@@ -264,6 +275,7 @@ namespace Chocolatey
         private System.Windows.Forms.Button btnForm2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

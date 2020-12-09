@@ -51,6 +51,7 @@ namespace Chocolatey
             this.btnInstEdge = new System.Windows.Forms.Button();
             this.btnInstSkype = new System.Windows.Forms.Button();
             this.btnInstVeeam = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -323,12 +324,22 @@ namespace Chocolatey
             this.btnInstVeeam.UseVisualStyleBackColor = false;
             this.btnInstVeeam.Click += new System.EventHandler(this.btnInstVeeam_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1058, 553);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Nasko, Gena, Svet";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1168, 578);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInstVeeam);
             this.Controls.Add(this.btnInst0patch);
             this.Controls.Add(this.btninstFoxitRdr);
@@ -372,5 +383,6 @@ namespace Chocolatey
         private System.Windows.Forms.Button btnInstSkype;
         private System.Windows.Forms.Button btnInstVeeam;
         private System.Windows.Forms.Button btnInstEdge;
+        private System.Windows.Forms.Label label1;
     }
 }
