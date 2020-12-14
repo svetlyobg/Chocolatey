@@ -137,7 +137,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install officeproplus2013", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install officeproplus2013 -y", ref txtMsg);
             }
             catch (Exception ex)
             {
