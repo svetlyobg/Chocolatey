@@ -96,7 +96,7 @@ namespace Chocolatey
             }
             Application.DoEvents();
         }
-        
+
 
         private void btnListOutdated_Click(object sender, EventArgs e)
         {
@@ -185,8 +185,8 @@ namespace Chocolatey
             Form f2 = new Form2();
             f2.Show();
         }
-    
-      
+
+
         private void BtnInstChocoGUI_Click(object sender, EventArgs e)
         {
             try
@@ -201,7 +201,7 @@ namespace Chocolatey
 
         private void btnBrowsePackages_Click(object sender, EventArgs e)
         {
-            private void btnBrowsePackages_Click(object sender, EventArgs e)
+
             {
                 System.Diagnostics.Process.Start("microsoft-edge:https://chocolatey.org/packages");
             }
