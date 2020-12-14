@@ -44,6 +44,7 @@ namespace Chocolatey
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnInstChocoGUI = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -232,12 +233,27 @@ namespace Chocolatey
             this.label1.TabIndex = 13;
             this.label1.Text = "Nasko, Gena, Svet";
             // 
+            // BtnInstChocoGUI
+            // 
+            this.BtnInstChocoGUI.BackColor = System.Drawing.Color.Lime;
+            this.BtnInstChocoGUI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnInstChocoGUI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BtnInstChocoGUI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnInstChocoGUI.Location = new System.Drawing.Point(958, 133);
+            this.BtnInstChocoGUI.Name = "BtnInstChocoGUI";
+            this.BtnInstChocoGUI.Size = new System.Drawing.Size(174, 29);
+            this.BtnInstChocoGUI.TabIndex = 14;
+            this.BtnInstChocoGUI.Text = "InstallChocoGUI";
+            this.BtnInstChocoGUI.UseVisualStyleBackColor = false;
+            this.BtnInstChocoGUI.Click += new System.EventHandler(this.BtnInstChocoGUI_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1356, 706);
+            this.Controls.Add(this.BtnInstChocoGUI);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnForm2);
             this.Controls.Add(this.btnListOutdated);
@@ -276,6 +292,7 @@ namespace Chocolatey
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnInstChocoGUI;
     }
 }
 

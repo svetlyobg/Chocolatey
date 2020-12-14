@@ -216,5 +216,17 @@ namespace Chocolatey
                 txtMsg.Text = ex.ToString();
             }
         }
+
+        private void BtnInstChocoGUI_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install chocolateygui", ref txtMsg);
+            }
+            catch (Exception ex)
+            {
+                txtMsg.Text = ex.ToString();
+            }
+        }
     }
 }
