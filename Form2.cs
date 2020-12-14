@@ -125,7 +125,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install microsoft-office-deployment", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install microsoft-office-deployment -y", ref txtMsg);
             }
             catch (Exception ex)
             {
