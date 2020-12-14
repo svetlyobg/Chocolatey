@@ -209,7 +209,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install microsoft-edge", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install microsoft-edge -y", ref txtMsg);
             }
             catch (Exception ex)
             {
