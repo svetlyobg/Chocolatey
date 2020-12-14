@@ -197,7 +197,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install veeam-agent", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install veeam-agent -y", ref txtMsg);
             }
             catch (Exception ex)
             {
