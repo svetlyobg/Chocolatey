@@ -87,7 +87,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install adobereader", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install adobereader -y", ref txtMsg);
             }
             catch (Exception ex)
             {
