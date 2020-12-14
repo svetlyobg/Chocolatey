@@ -75,7 +75,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install teamviewer", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install teamviewer -y ", ref txtMsg);
             }
             catch (Exception ex)
             {
