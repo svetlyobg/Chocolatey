@@ -185,7 +185,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install skype", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install skype -y", ref txtMsg);
             }
             catch (Exception ex)
             {
