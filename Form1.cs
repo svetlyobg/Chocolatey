@@ -198,5 +198,18 @@ namespace Chocolatey
                 txtMsg.Text = ex.ToString();
             }
         }
+
+        private void btnBrowsePackages_Click(object sender, EventArgs e)
+        {
+            private void btnBrowsePackages_Click(object sender, EventArgs e)
+            {
+                System.Diagnostics.Process.Start("microsoft-edge:https://chocolatey.org/packages");
+            }
+        }
+
+        private void btnOnlineDocs_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("microsoft-edge:https://docs.chocolatey.org/en-us/");
+        }
     }
 }

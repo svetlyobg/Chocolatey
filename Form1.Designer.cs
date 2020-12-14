@@ -45,6 +45,8 @@ namespace Chocolatey
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnInstChocoGUI = new System.Windows.Forms.Button();
+            this.btnBrowsePackages = new System.Windows.Forms.Button();
+            this.btnOnlineDocs = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +123,7 @@ namespace Chocolatey
             this.btnListAll.Cursor = System.Windows.Forms.Cursors.No;
             this.btnListAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnListAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListAll.Location = new System.Drawing.Point(372, 132);
+            this.btnListAll.Location = new System.Drawing.Point(192, 131);
             this.btnListAll.Name = "btnListAll";
             this.btnListAll.Size = new System.Drawing.Size(174, 29);
             this.btnListAll.TabIndex = 5;
@@ -135,7 +137,7 @@ namespace Chocolatey
             this.btnUpgradeOutdated.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpgradeOutdated.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnUpgradeOutdated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpgradeOutdated.Location = new System.Drawing.Point(767, 133);
+            this.btnUpgradeOutdated.Location = new System.Drawing.Point(587, 130);
             this.btnUpgradeOutdated.Name = "btnUpgradeOutdated";
             this.btnUpgradeOutdated.Size = new System.Drawing.Size(174, 29);
             this.btnUpgradeOutdated.TabIndex = 6;
@@ -150,7 +152,7 @@ namespace Chocolatey
             this.btnListOutdated.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnListOutdated.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnListOutdated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListOutdated.Location = new System.Drawing.Point(587, 131);
+            this.btnListOutdated.Location = new System.Drawing.Point(372, 129);
             this.btnListOutdated.Name = "btnListOutdated";
             this.btnListOutdated.Size = new System.Drawing.Size(174, 30);
             this.btnListOutdated.TabIndex = 7;
@@ -239,7 +241,7 @@ namespace Chocolatey
             this.BtnInstChocoGUI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnInstChocoGUI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnInstChocoGUI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnInstChocoGUI.Location = new System.Drawing.Point(958, 133);
+            this.BtnInstChocoGUI.Location = new System.Drawing.Point(790, 130);
             this.BtnInstChocoGUI.Name = "BtnInstChocoGUI";
             this.BtnInstChocoGUI.Size = new System.Drawing.Size(174, 29);
             this.BtnInstChocoGUI.TabIndex = 14;
@@ -247,12 +249,42 @@ namespace Chocolatey
             this.BtnInstChocoGUI.UseVisualStyleBackColor = false;
             this.BtnInstChocoGUI.Click += new System.EventHandler(this.BtnInstChocoGUI_Click);
             // 
+            // btnBrowsePackages
+            // 
+            this.btnBrowsePackages.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBrowsePackages.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnBrowsePackages.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnBrowsePackages.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBrowsePackages.Location = new System.Drawing.Point(1149, 185);
+            this.btnBrowsePackages.Name = "btnBrowsePackages";
+            this.btnBrowsePackages.Size = new System.Drawing.Size(174, 30);
+            this.btnBrowsePackages.TabIndex = 15;
+            this.btnBrowsePackages.Text = "Browse Online Packages";
+            this.btnBrowsePackages.UseVisualStyleBackColor = false;
+            this.btnBrowsePackages.Click += new System.EventHandler(this.btnBrowsePackages_Click);
+            // 
+            // btnOnlineDocs
+            // 
+            this.btnOnlineDocs.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnOnlineDocs.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnOnlineDocs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnOnlineDocs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOnlineDocs.Location = new System.Drawing.Point(1149, 239);
+            this.btnOnlineDocs.Name = "btnOnlineDocs";
+            this.btnOnlineDocs.Size = new System.Drawing.Size(174, 30);
+            this.btnOnlineDocs.TabIndex = 16;
+            this.btnOnlineDocs.Text = "Online Documentation";
+            this.btnOnlineDocs.UseVisualStyleBackColor = false;
+            this.btnOnlineDocs.Click += new System.EventHandler(this.btnOnlineDocs_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1356, 706);
+            this.Controls.Add(this.btnOnlineDocs);
+            this.Controls.Add(this.btnBrowsePackages);
             this.Controls.Add(this.BtnInstChocoGUI);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnForm2);
@@ -293,6 +325,8 @@ namespace Chocolatey
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnInstChocoGUI;
+        private System.Windows.Forms.Button btnBrowsePackages;
+        private System.Windows.Forms.Button btnOnlineDocs;
     }
 }
 
