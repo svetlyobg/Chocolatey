@@ -41,7 +41,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install googlechrome", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install googlechrome -y", ref txtMsg);
             }
             catch (Exception ex)
             {
