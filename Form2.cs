@@ -161,7 +161,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office2019proplus", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office2019proplus -y", ref txtMsg);
             }
             catch (Exception ex)
             {
