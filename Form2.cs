@@ -173,7 +173,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office365business", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office365business -y", ref txtMsg);
             }
             catch (Exception ex)
             {
