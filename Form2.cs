@@ -63,7 +63,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install firefox", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install firefox -y", ref txtMsg);
             }
             catch (Exception ex)
             {
