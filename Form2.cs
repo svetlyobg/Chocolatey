@@ -99,7 +99,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install foxitreader", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install foxitreader -y", ref txtMsg);
                 System.Windows.Forms.Application.Exit();
             }
             catch (Exception ex)
