@@ -217,11 +217,6 @@ namespace Chocolatey
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtMsg_TextChanged(object sender, EventArgs e)
         {
 
