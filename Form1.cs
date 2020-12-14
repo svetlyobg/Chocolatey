@@ -185,43 +185,13 @@ namespace Chocolatey
             Form f2 = new Form2();
             f2.Show();
         }
-
-        private void btninstFoxitRdr_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install foxitreader", ref txtMsg);
-               // System.Windows.Forms.Application.Exit();
-            }
-            catch (Exception ex)
-            {
-                txtMsg.Text = ex.ToString();
-               // System.Windows.Forms.Application.Exit();
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install cutepdf", ref txtMsg);
-            }
-            catch (Exception ex)
-            {
-                txtMsg.Text = ex.ToString();
-            }
-        }
-
+    
+      
         private void BtnInstChocoGUI_Click(object sender, EventArgs e)
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install chocolateygui", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install chocolateygui -y", ref txtMsg);
             }
             catch (Exception ex)
             {
