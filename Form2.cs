@@ -113,7 +113,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install 0patch", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install 0patch -y", ref txtMsg);
             }
             catch (Exception ex)
             {
