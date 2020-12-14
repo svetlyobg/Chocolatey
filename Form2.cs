@@ -23,7 +23,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install bulk-crap-uninstaller", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install bulk-crap-uninstaller -y", ref txtMsg);
             }
             catch (Exception ex)
             {
