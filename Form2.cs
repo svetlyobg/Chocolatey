@@ -149,7 +149,7 @@ namespace Chocolatey
         {
             try
             {
-                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office365homepremium", ref txtMsg);
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install office365homepremium -y", ref txtMsg);
             }
             catch (Exception ex)
             {
