@@ -226,6 +226,18 @@ namespace Chocolatey
         {
 
         }
+
+        private void btnInstGlassWire_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Chocolatey.PowerShellCmd.PowerShellCommand("choco install glasswire -y", ref txtMsg);
+            }
+            catch (Exception ex)
+            {
+                txtMsg.Text = ex.ToString();
+            }
+        }
     }
 }
 

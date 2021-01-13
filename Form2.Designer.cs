@@ -54,6 +54,7 @@ namespace Chocolatey
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnInstGlassWire = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -354,12 +355,27 @@ namespace Chocolatey
             this.textBox2.TabIndex = 20;
             this.textBox2.Text = "choco uninstall SOFTWARE -y --remove-dependencies";
             // 
+            // btnInstGlassWire
+            // 
+            this.btnInstGlassWire.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnInstGlassWire.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInstGlassWire.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnInstGlassWire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInstGlassWire.Location = new System.Drawing.Point(372, 48);
+            this.btnInstGlassWire.Name = "btnInstGlassWire";
+            this.btnInstGlassWire.Size = new System.Drawing.Size(174, 30);
+            this.btnInstGlassWire.TabIndex = 21;
+            this.btnInstGlassWire.Text = "Install GlassWire";
+            this.btnInstGlassWire.UseVisualStyleBackColor = false;
+            this.btnInstGlassWire.Click += new System.EventHandler(this.btnInstGlassWire_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1168, 578);
+            this.Controls.Add(this.btnInstGlassWire);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -412,5 +428,6 @@ namespace Chocolatey
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnInstGlassWire;
     }
 }
